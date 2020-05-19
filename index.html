@@ -49,17 +49,53 @@
             </a>
         </div>
 
-        <div>
+        <div class="row">
             <h1>About Me</h1>
-
         </div>
 
-
-
+        <div id="customRequestBox">
+          <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+            <div class="row">
+              <div class="form-group col">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col">
+                <label for="text">Message</label>
+                <textarea name="text" class="form-control" rows=3 placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                  <label for="reply-to-email">Email</label>
+                  <input type="text" id="reply-to-email" class="form-control" name="reply_to" placeholder="Your Email" />
+                </div>
+            </div>
+    
+            <!-- max number of api calls per day is 25. right now it's getting sent to my email @sampgill. Will need to be Danielle's 
+            example code taken from https://postmail.invotes.com/accounts/manage/70d9fa91-3258-4c4d-a391-135f4c52b660
+            -->
+            <input type="hidden" name="access_token" value="lo9fgk9elmkib5t21id1bdn3" />
+              <!-- return urls can be fully qualified -OR-
+                 start with / for root relative -OR-
+                 start with . for url relative --> 
+            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+              
+            <div class="row">
+              <div class="form-group">
+                <input id="submit_form" type="submit" value="Send" class="btn btn-primary"/>
+                <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+              </div>
+            </div>
+            
+            <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+            
+          </form>
+        </div>
     </div>
-
-
-
 </body>
 
 </html>
