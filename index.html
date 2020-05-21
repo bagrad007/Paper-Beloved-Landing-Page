@@ -2,113 +2,136 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Paper Beloved</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Paper Beloved</title>
 </head>
 
 <body>
 
-    <h1>Batch Cat</h1>
+  <h1>Paper Beloved</h1>
 
-    <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="batch_the phat cat.jpg" alt="Home Decor">
-                    <div class="carousel-caption">
-                        <h3>Home Decor</h3>
-                        <p>Find decor that speaks to your heart</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="batch_the phat cat.jpg" alt="Paper Flowers">
-                    <div class="carousel-caption">
-                        <h3>Paper Flowers</h3>
-                        <p>For all those special occassions</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="batch_the phat cat.jpg" alt="Greetings Cards">
-
-                    <div class="carousel-caption">
-                        <h3>Greeting Cards</h3>
-                        <p>Special cards for special people</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="Edited Bee frame x600IMG_4794.jpg" alt="Home Decor">
+          <div class="carousel-caption">
+            <h3>Home Decor</h3>
+            <p>Find decor that speaks to your heart</p>
+          </div>
         </div>
 
-        <div class="row">
-            <h1>About Me</h1>
+        <div class="item">
+          <img src="pretty_smart_girlpretty_smart_girl.jpg" alt="Paper Flowers">
+          <div class="carousel-caption">
+            <h3>Paper Flowers</h3>
+            <p>For all those special occassions</p>
+          </div>
         </div>
+
+        <div class="item">
+          <img src="batch_the phat cat.jpg" alt="Greetings Cards">
+
+          <div class="carousel-caption">
+            <h3>Greeting Cards</h3>
+            <p>Special cards for special people</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="row">
+      <h1>About Me</h1>
+      <p>We love all things beautiful but
+        especially beautiful paper! At Paper Beloved, we celebrate the beauty of paper crafts and reading/writing themed
+        inspiration.
+        I hope you'll enjoy my creations as much as I do!
+      </p>
+    </div>
+
+    <div class="row">
+      <div>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#craft_request">Have a
+          request?</button>
+      </div>
+      <div id="craft_request" class="collapse">
+
 
         <div id="customRequestBox">
           <form action="https://postmail.invotes.com/send" method="post" id="email_form">
-            <div class="row">
+            <div>
               <div class="form-group col">
                 <label for="subject">Subject</label>
-                <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject"/>
+                <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject" />
               </div>
             </div>
-            <div class="row">
+            <div>
               <div class="form-group col">
                 <label for="text">Message</label>
                 <textarea name="text" class="form-control" rows=3 placeholder="Message"></textarea>
               </div>
             </div>
-            <div class="row">
-                <div class="form-group col">
-                  <label for="reply-to-email">Email</label>
-                  <input type="text" id="reply-to-email" class="form-control" name="reply_to" placeholder="Your Email" />
-                </div>
+            <div>
+              <div class="form-group col">
+                <label for="reply-to-email">Email</label>
+                <input type="text" id="reply-to-email" class="form-control" name="reply_to" placeholder="Your Email" />
+              </div>
             </div>
-    
+
             <!-- max number of api calls per day is 25. right now it's getting sent to my email @sampgill. Will need to be Danielle's 
             example code taken from https://postmail.invotes.com/accounts/manage/70d9fa91-3258-4c4d-a391-135f4c52b660
             -->
             <input type="hidden" name="access_token" value="lo9fgk9elmkib5t21id1bdn3" />
-              <!-- return urls can be fully qualified -OR-
+            <!-- return urls can be fully qualified -OR-
                  start with / for root relative -OR-
-                 start with . for url relative --> 
+                 start with . for url relative -->
             <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
             <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
-              
-            <div class="row">
+
+            <div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultChecked2" unchecked>
+                <label class="custom-control-label" for="defaultChecked2">Is this time sensetive?</label>
+              </div>
+
+
+            </div>
+
+            <div>
               <div class="form-group">
-                <input id="submit_form" type="submit" value="Send" class="btn btn-primary"/>
+                <input id="submit_form" type="submit" value="Send" class="btn btn-primary" />
                 <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
               </div>
             </div>
-            
-            <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
-            
-          </form>
         </div>
+        <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+
+        </form>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
