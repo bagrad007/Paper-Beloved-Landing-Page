@@ -5,7 +5,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Paper Beloved</title>
 </head>
@@ -26,7 +28,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="Edited Bee frame x600IMG_4794.jpg" alt="Home Decor">
+          <img src="photos/Edited Bee frame x600IMG_4794.jpg" alt="Home Decor">
           <div class="carousel-caption">
             <h3>Home Decor</h3>
             <p>Find decor that speaks to your heart</p>
@@ -34,7 +36,7 @@
         </div>
 
         <div class="item">
-          <img src="pretty_smart_girlpretty_smart_girl.jpg" alt="Paper Flowers">
+          <img src="Photos/pretty_smart_girlpretty_smart_girl.jpg" alt="Paper Flowers">
           <div class="carousel-caption">
             <h3>Paper Flowers</h3>
             <p>For all those special occassions</p>
@@ -42,7 +44,7 @@
         </div>
 
         <div class="item">
-          <img src="batch_the phat cat.jpg" alt="Greetings Cards">
+          <img src="Photos/batch_the phat cat.jpg" alt="Greetings Cards">
 
           <div class="carousel-caption">
             <h3>Greeting Cards</h3>
@@ -90,7 +92,7 @@
             <div>
               <div class="form-group col">
                 <label for="text">Message</label>
-                <textarea name="text" class="form-control" rows=3 placeholder="Message"></textarea>
+                <textarea name="text" class="form-control" rows=3 placeholder="Message"id ="text_area"></textarea>
               </div>
             </div>
             <div>
@@ -128,8 +130,17 @@
         </div>
         <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
 
+
+
+
         </form>
+
       </div>
+    </div>
+    <div>
+
+      <button class="btn btn-default" onclick="revealText()" >Reveal</button>
+
     </div>
   </div>
 </body>
